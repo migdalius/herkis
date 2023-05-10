@@ -8,6 +8,7 @@ import Slide from "./components/slide/Slide";
 import CatCard from "./components/catCard/CatCard";
 
 import { cards } from "../src/data";
+import Localization from "./components/localization/Localization";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <CatCard key={card.id} card={card} />
         ))}
       </Slide>
+      <Localization />
     </>
   );
 }
