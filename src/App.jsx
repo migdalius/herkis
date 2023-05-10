@@ -4,166 +4,22 @@ import viteLogo from "/vite.svg";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Around from "./components/around/Around";
+import Slide from "./components/slide/Slide";
+import CatCard from "./components/catCard/CatCard";
+
+import { cards } from "../src/data";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Navbar />
       <Hero />
       <Around />
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
-        vitae dolorum. Aliquid consectetur, minus ratione laudantium atque odit
-        cumque, illo accusantium, consequuntur distinctio sit dolorum qui eum
-        quasi? Sit, itaque!
-      </h1>
+      <Slide slidesToShow={5} arrowsScroll={5}>
+        {cards.map((card) => (
+          <CatCard key={card.id} card={card} />
+        ))}
+      </Slide>
     </>
   );
 }

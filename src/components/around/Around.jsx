@@ -4,7 +4,8 @@ import "./Around.scss";
 const Around = () => {
   return (
     <div className="around">
-      Tutaj wyszukasz najbliższą piekarnie rzemieśniczą
+      <h3>Znajdź najbliższą pieranie rzemieśniczą dla twojej lokalizacji</h3>
+      <img src="./img/geo.svg" alt="" />
     </div>
   );
 };

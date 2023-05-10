@@ -29,9 +29,9 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           {/* <Link to="/"> */}
+          <span className="dot">.</span>
           <span className="text">Herkis</span>
           {/* </Link> */}
-          <span className="dot">.</span>
         </div>
         <div className="links">
           <span>Link 1</span>

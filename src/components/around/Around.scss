@@ -1,4 +1,19 @@
 .around {
-  background-color: #555;
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  height: 100px;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+
+  &:hover {
+    background-color: #e5e7eb;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
