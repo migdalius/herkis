@@ -11,6 +11,7 @@ import { cards } from "../src/data";
 import MainTitle from "./components/mainTitle/MainTitle";
 import Why from "./components/why/Why";
 import MobileApp from "./components/app/MobileApp";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </Slide>
       <Why />
       <MobileApp />
+      <Footer />
     </>
   );
 }
