@@ -1,0 +1,51 @@
+.why {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    h2 {
+      font-size: 32px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .title-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+          font-size: 26px;
+          font-weight: 600;
+          color: #555;
+        }
+      }
+      .desc {
+        font-size: 22px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,28 +1,29 @@
 export const cards = [
   {
     id: 1,
-    title: "Cała w Mące",
+    title: "Być może",
     desc: "",
-    img: "https://images.pexels.com/photos/7532110/pexels-photo-7532110.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "./img/piekarnie/slider/byc_moze_piekarnia_rzemiesnicza_warszawa.jpg",
   },
   {
     id: 2,
+    title: "Będzie Dobrze",
+    desc: "",
+    img: "./img/piekarnie/slider/bedzie_dobrze_piekarnia_rzemiesnicza_warszawa.jpg",
+  },
+  {
+    id: 3,
     title: "Bread Morning",
     desc: "",
     img: "https://images.pexels.com/photos/11295165/pexels-photo-11295165.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
-    id: 3,
+    id: 4,
     title: "DEJ",
     desc: "",
     img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
-  {
-    id: 4,
-    title: "Będzie Dobrze",
-    desc: "",
-    img: "https://images.pexels.com/photos/7608079/pexels-photo-7608079.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  },
+
   {
     id: 5,
     title: "Kromka",
@@ -140,6 +141,12 @@ export const cards = [
   {
     id: 21,
     title: "Trimar  ",
+    desc: "",
+    img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+  },
+  {
+    id: 22,
+    title: "Cała w Mące",
     desc: "",
     img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },

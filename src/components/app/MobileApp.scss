@@ -1,0 +1,17 @@
+.mobile-app {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  .container {
+    width: 1400px;
+    height: 300px;
+    display: flex;
+
+    .left {
+      width: 30%;
+    }
+    .right {
+      width: 70%;
+    }
+  }
+}

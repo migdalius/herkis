@@ -8,7 +8,9 @@ import Slide from "./components/slide/Slide";
 import CatCard from "./components/catCard/CatCard";
 
 import { cards } from "../src/data";
-import Localization from "./components/localization/Localization";
+import MainTitle from "./components/mainTitle/MainTitle";
+import Why from "./components/why/Why";
+import MobileApp from "./components/app/MobileApp";
 
 function App() {
   return (
@@ -16,12 +18,14 @@ function App() {
       <Navbar />
       <Hero />
       <Around />
+      <MainTitle />
       <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
         ))}
       </Slide>
-      <Localization />
+      <Why />
+      <MobileApp />
     </>
   );
 }
