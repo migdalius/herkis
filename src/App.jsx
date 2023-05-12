@@ -13,10 +13,20 @@ import Why from "./components/why/Why";
 import MobileApp from "./components/app/MobileApp";
 import Footer from "./components/footer/Footer";
 
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>Hello world!</div>,
+    },
+  ]);
+
   return (
     <>
-      <Navbar />
+      <RouterProvider router={router} />
+      {/* <Navbar />
       <Hero />
       <Around />
       <MainTitle />
@@ -27,7 +37,7 @@ function App() {
       </Slide>
       <Why />
       <MobileApp />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
