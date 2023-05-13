@@ -1,43 +1,40 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import Around from "./components/around/Around";
-import Slide from "./components/slide/Slide";
-import CatCard from "./components/catCard/CatCard";
-
-import { cards } from "../src/data";
-import MainTitle from "./components/mainTitle/MainTitle";
-import Why from "./components/why/Why";
-import MobileApp from "./components/app/MobileApp";
 import Footer from "./components/footer/Footer";
-
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/home/Home";
+import "./App.scss";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
+  const Layout = () => {
+    return (
+      <>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </>
+    );
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div>Hello world!</div>,
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/lista-piekarni",
+          element: <Home />,
+        },
+      ],
     },
   ]);
 
   return (
     <>
       <RouterProvider router={router} />
-      {/* <Navbar />
-      <Hero />
-      <Around />
-      <MainTitle />
-      <Slide slidesToShow={5} arrowsScroll={5}>
-        {cards.map((card) => (
-          <CatCard key={card.id} card={card} />
-        ))}
-      </Slide>
-      <Why />
-      <MobileApp />
-      <Footer /> */}
     </>
   );
 }
