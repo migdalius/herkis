@@ -1,0 +1,130 @@
+.bakery-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .top-filter {
+    display: flex;
+    margin-top: 80px;
+    gap: 50px;
+  }
+  .container {
+    width: 1400px;
+    display: flex;
+
+    .left {
+      width: 30%;
+      margin-top: 80px;
+      margin-bottom: 80px;
+
+      .sidebar {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 90%;
+        border-radius: 5px;
+        .localization {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          button {
+            height: 60px;
+          }
+        }
+        .label {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        .sort {
+          margin: 30px;
+          padding-bottom: 20px;
+
+          p {
+            padding-bottom: 10px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 70%;
+      margin-top: 80px;
+      margin-bottom: 80px;
+
+      .bakery-container {
+        margin-top: 40px;
+        display: flex;
+        gap: 40px;
+        border-bottom: 1px solid #ddd;
+        .left-side {
+          img {
+            width: 270px;
+            border-radius: 10px;
+          }
+        }
+        .right-side {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .bakery-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #222;
+          }
+          .bakery-street {
+            font-size: 18px;
+          }
+          .bakery-city {
+            font-size: 18px;
+          }
+
+          .delivery-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+            .delivery {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+
+              span {
+                color: #22c55e;
+                font-weight: 700;
+              }
+            }
+          }
+          .rating-stars-contaner {
+            display: flex;
+            margin-top: 10px;
+            gap: 5px;
+          }
+          .rating-container {
+            display: flex;
+            gap: 15px;
+            padding-bottom: 20px;
+          }
+        }
+        .button-container {
+          display: flex;
+          align-items: end;
+          margin-bottom: 10px;
+          button {
+            width: 170px;
+            height: 50px;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 10px;
+            background-color: #c19b77;
+            transition: 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              background-color: #222;
+            }
+          }
+        }
+      }
+    }
+  }
+}

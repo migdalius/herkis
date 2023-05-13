@@ -3,6 +3,8 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import "./App.scss";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import BakeryList from "./pages/home/BakeryList";
+import BakeryDetails from "./pages/home/BakeryDetails";
 
 function App() {
   const Layout = () => {
@@ -26,7 +28,11 @@ function App() {
         },
         {
           path: "/lista-piekarni",
-          element: <Home />,
+          element: <BakeryList />,
+        },
+        {
+          path: "/lista-piekarni/:id",
+          element: <BakeryDetails />,
         },
       ],
     },

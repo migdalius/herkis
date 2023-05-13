@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
     "infinite-react-carousel": "^1.2.11",
     "leaflet": "^1.9.3",
     "leaflet-routing-machine": "^3.2.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-leaflet": "^4.2.1",
     "react-leaflet-routing-machine": "^0.0.5",
     "react-router-dom": "^6.11.1",
