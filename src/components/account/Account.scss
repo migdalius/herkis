@@ -1,0 +1,41 @@
+.account {
+  margin: 40px;
+
+  h4 {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin-bottom: 40px;
+  }
+
+  .kokpit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 columns of equal width */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows of equal height */
+    gap: 10px; /* spacing between grid items */
+
+    .kokpit-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: #ddd;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px;
+      }
+    }
+  }
+}

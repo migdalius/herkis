@@ -1,8 +1,8 @@
 import React from "react";
-import "./MyAccount.scss";
+import "./MyReservation.scss";
 import SideBar from "../../components/sideBar/SideBar";
-import Account from "../../components/account/Account";
-const MyAccount = () => {
+import Reservation from "../../components/reservation/Reservation";
+const MyReservation = () => {
   return (
     <div className="my-account">
       <div className="container">
@@ -11,7 +11,7 @@ const MyAccount = () => {
         </div>
         <div className="right">
           <div className="main-content">
-            <Account />
+            <Reservation />
           </div>
         </div>
       </div>
@@ -19,4 +19,4 @@ const MyAccount = () => {
   );
 };
 
-export default MyAccount;
+export default MyReservation;

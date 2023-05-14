@@ -7,6 +7,7 @@ import BakeryList from "./pages/home/BakeryList";
 import BakeryDetails from "./pages/home/BakeryDetails";
 import ProductDetails from "./pages/home/ProductDetails";
 import MyAccount from "./pages/admin/MyAccount";
+import MyReservation from "./pages/admin/MyReservation";
 
 function App() {
   const Layout = () => {
@@ -43,6 +44,10 @@ function App() {
         {
           path: "/moje-konto",
           element: <MyAccount />,
+        },
+        {
+          path: "/moje-konto/rezerwacje",
+          element: <MyReservation />,
         },
       ],
     },
