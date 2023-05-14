@@ -15,6 +15,11 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+import Where from "../../components/where/Where";
+import Alert from "@mui/material/Alert";
+
 const BakeryDetails = () => {
   const [value, setValue] = React.useState("1");
 
@@ -72,7 +77,7 @@ const BakeryDetails = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="tabs">
           <ThemeProvider theme={theme}>
             <Box sx={{ width: "100%", typography: "body1", fontSize: "18px" }}>
               <TabContext value={value}>
@@ -99,12 +104,43 @@ const BakeryDetails = () => {
                   </TabList>
                 </Box>
                 <TabPanel value="1">
-                  <div>
+                  <div className="grid">
                     <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <div className="pagin">
+                      <Stack spacing={2}>
+                        <Pagination count={10} color="primary" />
+                      </Stack>
+                    </div>
                   </div>
                 </TabPanel>
-                <TabPanel value="2">Item Two</TabPanel>
-                <TabPanel value="3">Item Three</TabPanel>
+                <TabPanel value="2">
+                  <Where />
+                </TabPanel>
+                <TabPanel value="3">
+                  <Alert severity="warning">
+                    Piekarnia nie jest jeszcze zarejestrowana w naszym serwisie,
+                    dlatego obecnie opis piekarni jest niedostępny.
+                  </Alert>
+                </TabPanel>
               </TabContext>
             </Box>
           </ThemeProvider>

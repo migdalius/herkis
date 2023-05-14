@@ -5,6 +5,7 @@ import "./App.scss";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import BakeryList from "./pages/home/BakeryList";
 import BakeryDetails from "./pages/home/BakeryDetails";
+import ProductDetails from "./pages/home/ProductDetails";
 
 function App() {
   const Layout = () => {
@@ -33,6 +34,10 @@ function App() {
         {
           path: "/lista-piekarni/:id",
           element: <BakeryDetails />,
+        },
+        {
+          path: "/lista-piekarni/:id/produkty/:idProdukt",
+          element: <ProductDetails />,
         },
       ],
     },

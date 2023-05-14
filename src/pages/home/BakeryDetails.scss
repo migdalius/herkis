@@ -12,6 +12,7 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 80px;
+
       .bakery-img {
         position: relative;
         width: 100%;
@@ -107,6 +108,26 @@
                 background-color: #f3f4f6;
               }
             }
+          }
+        }
+      }
+    }
+    .tabs {
+      width: 100%;
+      margin-top: 80px;
+
+      .MuiTabPanel-root {
+        padding: 0;
+
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          gap: 10px;
+          margin-top: 10px;
+
+          .pagin {
+            margin-top: 40px;
           }
         }
       }
