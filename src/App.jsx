@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import BakeryList from "./pages/home/BakeryList";
 import BakeryDetails from "./pages/home/BakeryDetails";
 import ProductDetails from "./pages/home/ProductDetails";
+import MyAccount from "./pages/admin/MyAccount";
 
 function App() {
   const Layout = () => {
@@ -38,6 +39,10 @@ function App() {
         {
           path: "/lista-piekarni/:id/produkty/:idProdukt",
           element: <ProductDetails />,
+        },
+        {
+          path: "/moje-konto",
+          element: <MyAccount />,
         },
       ],
     },
