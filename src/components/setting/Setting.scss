@@ -1,0 +1,49 @@
+.setting {
+  margin: 20px;
+
+  .setting-title {
+    font-size: 26px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .setting-container {
+    margin: 20px;
+
+    .setting-sub-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      input {
+        width: 300px;
+        border: 1px solid #ddd;
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+
+      button {
+        width: 300px;
+        height: 35px;
+        border: none;
+        background-color: #c19b77;
+        margin-top: 20px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: #222;
+        }
+      }
+    }
+  }
+}

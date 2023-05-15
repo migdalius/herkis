@@ -1,0 +1,76 @@
+.shopping {
+  .table {
+    margin: 20px;
+
+    .user-reservation-container {
+      width: 95%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      .user-pay {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .user-delivery {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #ddd;
+          padding-top: 10px;
+        }
+        p {
+          font-weight: 600;
+          color: green;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+        }
+      }
+      .user-desc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+
+        .date-container {
+          .user-company {
+            font-weight: 600;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .user-product-container {
+        .single-product {
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 10px;
+          img {
+            width: 140px;
+            object-fit: scale-down;
+            border-radius: 5px;
+          }
+        }
+      }
+      .single-delivery-price {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .single-product-sum {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

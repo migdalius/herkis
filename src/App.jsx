@@ -9,6 +9,9 @@ import ProductDetails from "./pages/home/ProductDetails";
 import MyAccount from "./pages/admin/MyAccount";
 import MyReservation from "./pages/admin/MyReservation";
 
+import MyShopping from "./pages/admin/MyShopping";
+import MySetting from "./pages/admin/MySetting";
+
 function App() {
   const Layout = () => {
     return (
@@ -48,6 +51,14 @@ function App() {
         {
           path: "/moje-konto/rezerwacje",
           element: <MyReservation />,
+        },
+        {
+          path: "/moje-konto/zakupy",
+          element: <MyShopping />,
+        },
+        {
+          path: "/moje-konto/ustawienia-konta",
+          element: <MySetting />,
         },
       ],
     },
