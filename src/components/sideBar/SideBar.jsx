@@ -3,7 +3,7 @@ import "./SideBar.scss";
 
 const SideBar = () => {
   return (
-    <div className="sidebar">
+    <div className="sidebar-admin">
       <h3>Moje Konto</h3>
       <p>Moje Rezerwacje</p>
       <p>Moje Zakupy</p>

@@ -1,5 +1,60 @@
 .reservation {
   .table {
-    margin: 10px;
+    margin: 20px;
+
+    .user-reservation-container {
+      width: 95%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+
+      .user-pay {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          font-weight: 600;
+          color: green;
+        }
+      }
+      .user-desc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+
+        .date-container {
+          .user-company {
+            font-weight: 600;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .user-product-container {
+        .single-product {
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 10px;
+          img {
+            width: 140px;
+            object-fit: scale-down;
+            border-radius: 5px;
+          }
+        }
+      }
+      .single-product-sum {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 }
