@@ -11,6 +11,7 @@ import MyReservation from "./pages/admin/MyReservation";
 
 import MyShopping from "./pages/admin/MyShopping";
 import MySetting from "./pages/admin/MySetting";
+import OrderList from "./pages/admin/OrderList";
 
 function App() {
   const Layout = () => {
@@ -59,6 +60,10 @@ function App() {
         {
           path: "/moje-konto/ustawienia-konta",
           element: <MySetting />,
+        },
+        {
+          path: "/moje-konto/piekarnia/lista-zamowien",
+          element: <OrderList />,
         },
       ],
     },
