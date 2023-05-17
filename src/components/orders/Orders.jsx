@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Orders.scss";
-
+import TextField from "@mui/material/TextField";
+import Autocomplete from "@mui/material/Autocomplete";
 import bread from "../../img/bread-hero.jpg";
 
+const options = ["W przygotowaniu", "Do odbioru", "Odebrane"];
+
 const Orders = () => {
+  const [value, setValue] = useState(options[0]);
+  const [inputValue, setInputValue] = useState("");
+
   return (
     <div className="orders-table-container">
       <div className="orders-table">
@@ -18,6 +24,7 @@ const Orders = () => {
               <th>Kwota</th>
               <th>Status Zamówienia</th>
               <th>Data zamówienia</th>
+              <th>Data Odbioru</th>
             </tr>
           </thead>
           <tbody>
@@ -37,9 +44,29 @@ const Orders = () => {
                   </div>
                 </div>
               </td>
-              <td>New York</td>
-              <td>New York</td>
-              <td>New York</td>
+              <td>40.99 zł</td>
+              <td>
+                <div>
+                  <Autocomplete
+                    value={value}
+                    onChange={(event, newValue) => {
+                      setValue(newValue);
+                    }}
+                    inputValue={inputValue}
+                    onInputChange={(event, newInputValue) => {
+                      setInputValue(newInputValue);
+                    }}
+                    id="user-order-status"
+                    options={options}
+                    sx={{ width: 210 }}
+                    renderInput={(params) => (
+                      <TextField {...params} label="Zmień Status" />
+                    )}
+                  />
+                </div>
+              </td>
+              <td>17.05.2023 07:25</td>
+              <td>18.05.2023 09:20</td>
             </tr>
           </tbody>
         </table>

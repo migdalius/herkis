@@ -12,6 +12,8 @@ import MyReservation from "./pages/admin/MyReservation";
 import MyShopping from "./pages/admin/MyShopping";
 import MySetting from "./pages/admin/MySetting";
 import OrderList from "./pages/admin/OrderList";
+import AddOrder from "./pages/admin/AddOrder";
+import ProductList from "./pages/admin/ProductList";
 
 function App() {
   const Layout = () => {
@@ -64,6 +66,14 @@ function App() {
         {
           path: "/moje-konto/piekarnia/lista-zamowien",
           element: <OrderList />,
+        },
+        {
+          path: "/moje-konto/piekarnia/dodaj-zamowienie",
+          element: <AddOrder />,
+        },
+        {
+          path: "/moje-konto/piekarnia/lista-produktow",
+          element: <ProductList />,
         },
       ],
     },

@@ -1,20 +1,17 @@
 import React from "react";
-import "./OrderList.scss";
-
-import Orders from "../../components/orders/Orders";
 import HorizontalBar from "../../components/horizontalBar/HorizontalBar";
-import SearchOrders from "../../components/searchOrders/SearchOrders";
-const OrderList = () => {
+import "./AddOrder.scss";
+import NewOrder from "../../components/newOrder/NewOrder";
+const AddOrder = () => {
   return (
-    <div className="bakery-order-list">
+    <div className="bakery-add-order">
       <div className="container">
         <div className="left">
           <HorizontalBar />
         </div>
         <div className="right">
           <div className="main-content">
-            <SearchOrders />
-            <Orders />
+            <NewOrder />
           </div>
         </div>
       </div>
@@ -22,4 +19,4 @@ const OrderList = () => {
   );
 };
 
-export default OrderList;
+export default AddOrder;
