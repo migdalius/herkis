@@ -17,6 +17,7 @@ import ProductList from "./pages/admin/ProductList";
 import AddProduct from "./pages/admin/AddProduct";
 import CompanyAdress from "./pages/admin/CompanyAdress";
 import Login from "./pages/home/Login";
+import Register from "./pages/home/Register";
 
 function App() {
   const Layout = () => {
@@ -92,7 +93,7 @@ function App() {
         },
         {
           path: "/rejestracja",
-          element: <CompanyAdress />,
+          element: <Register />,
         },
       ],
     },
