@@ -15,6 +15,8 @@ import OrderList from "./pages/admin/OrderList";
 import AddOrder from "./pages/admin/AddOrder";
 import ProductList from "./pages/admin/ProductList";
 import AddProduct from "./pages/admin/AddProduct";
+import CompanyAdress from "./pages/admin/CompanyAdress";
+import Login from "./pages/home/Login";
 
 function App() {
   const Layout = () => {
@@ -82,7 +84,15 @@ function App() {
         },
         {
           path: "/moje-konto/piekarnia/dane-piekarni",
-          element: <AddProduct />,
+          element: <CompanyAdress />,
+        },
+        {
+          path: "/logowanie",
+          element: <Login />,
+        },
+        {
+          path: "/rejestracja",
+          element: <CompanyAdress />,
         },
       ],
     },

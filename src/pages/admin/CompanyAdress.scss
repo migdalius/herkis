@@ -1,0 +1,27 @@
+.bakery-adress {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1400px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .left {
+      display: flex;
+      justify-content: center;
+    }
+
+    .right {
+      width: 100%;
+
+      .main-content {
+        border: 1px solid #ddd;
+        min-height: 560px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

@@ -23,6 +23,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 
 const HorizontalBar = () => {
   const [value, setValue] = useState(0);
+  console.log(value);
 
   return (
     <div className="horizontal-bar">
@@ -35,14 +36,16 @@ const HorizontalBar = () => {
               setValue(newValue);
             }}
           >
-            <BottomNavigationAction
+            {/* <BottomNavigationAction
               component={Link}
               to="/moje-konto/piekarnia/dodaj-zamowienie"
               label="Dodaj Zamówienie"
               icon={<AddShoppingCartIcon />}
-            />
+            /> */}
 
             <BottomNavigationAction
+              component={Link}
+              to="/moje-konto/piekarnia/lista-zamowien"
               label="Lista Zamówień"
               icon={<ShoppingCartCheckoutIcon />}
             />
@@ -58,18 +61,20 @@ const HorizontalBar = () => {
               label="Lista Produktów"
               icon={<ChecklistRtlIcon />}
             />
-            <BottomNavigationAction
+            {/* <BottomNavigationAction
               label="Lista Klientów"
               icon={<PersonSearchIcon />}
-            />
+            /> */}
             <BottomNavigationAction
+              component={Link}
+              to="/moje-konto/piekarnia/dane-piekarni"
               label="Dane Piekarni"
               icon={<StoreIcon />}
             />
-            <BottomNavigationAction
+            {/* <BottomNavigationAction
               label="Ustawienia"
               icon={<SettingsIcon />}
-            />
+            /> */}
             <BottomNavigationAction label="Wyloguj" icon={<LogoutIcon />} />
           </BottomNavigation>
         </Box>
