@@ -7,6 +7,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import RestoreIcon from "@mui/icons-material/Restore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../theme";
@@ -23,10 +24,6 @@ import LogoutIcon from "@mui/icons-material/Logout";
 const HorizontalBar = () => {
   const [value, setValue] = useState(0);
 
-  const AddOrder = () => {
-    window.location.href = "/";
-  };
-
   return (
     <div className="horizontal-bar">
       <ThemeProvider theme={theme}>
@@ -39,7 +36,8 @@ const HorizontalBar = () => {
             }}
           >
             <BottomNavigationAction
-              onClick={AddOrder}
+              component={Link}
+              to="/moje-konto/piekarnia/dodaj-zamowienie"
               label="Dodaj Zamówienie"
               icon={<AddShoppingCartIcon />}
             />
@@ -48,8 +46,15 @@ const HorizontalBar = () => {
               label="Lista Zamówień"
               icon={<ShoppingCartCheckoutIcon />}
             />
-            <BottomNavigationAction label="Dodaj Produkt" icon={<AddIcon />} />
             <BottomNavigationAction
+              component={Link}
+              to="/moje-konto/piekarnia/dodaj-produkt"
+              label="Dodaj Produkt"
+              icon={<AddIcon />}
+            />
+            <BottomNavigationAction
+              component={Link}
+              to="/moje-konto/piekarnia/lista-produktow"
               label="Lista Produktów"
               icon={<ChecklistRtlIcon />}
             />

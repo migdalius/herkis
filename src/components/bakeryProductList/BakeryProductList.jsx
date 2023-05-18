@@ -41,13 +41,13 @@ const BakeryProductList = () => {
                 </div>
               </td>
               <td>40.99 zł</td>
-              <td>
-                <ThemeProvider theme={theme}>
+              <ThemeProvider theme={theme}>
+                <td>
                   <div className="active-product">
                     <Switch {...label} defaultChecked />
                   </div>
-                </ThemeProvider>
-              </td>
+                </td>
+              </ThemeProvider>
 
               <td>
                 <div className="action-container">

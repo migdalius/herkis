@@ -14,6 +14,7 @@ import MySetting from "./pages/admin/MySetting";
 import OrderList from "./pages/admin/OrderList";
 import AddOrder from "./pages/admin/AddOrder";
 import ProductList from "./pages/admin/ProductList";
+import AddProduct from "./pages/admin/AddProduct";
 
 function App() {
   const Layout = () => {
@@ -74,6 +75,14 @@ function App() {
         {
           path: "/moje-konto/piekarnia/lista-produktow",
           element: <ProductList />,
+        },
+        {
+          path: "/moje-konto/piekarnia/dodaj-produkt",
+          element: <AddProduct />,
+        },
+        {
+          path: "/moje-konto/piekarnia/dane-piekarni",
+          element: <AddProduct />,
         },
       ],
     },

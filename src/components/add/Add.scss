@@ -1,0 +1,21 @@
+.produkt-form {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+
+  .text-content {
+    width: 80%;
+  }
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.button-product {
+  margin-left: 160px;
+}

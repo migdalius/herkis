@@ -23,7 +23,7 @@ const Navbar = () => {
   const currentUser = {
     id: 1,
     username: "Wojciech Nowak",
-    isSeller: true,
+    isSeller: false,
   };
 
   return (
@@ -36,7 +36,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
-          <span>Link 1</span>
+          <Link to="/lista-piekarni">Lista Piekarni</Link>
+
           <span>Link 2</span>
           <span>Link 3</span>
           <span>Link 4</span>
