@@ -6,6 +6,13 @@ const jwt = require("jsonwebtoken");
 // Register
 
 router.post("/register", async (req, res) => {
+  const existingUser = await User.findOne({
+    $or: [{ email: req.body.email }],
+  });
+
+  if (existingUser) {
+    return res.status(400).json({ message: "User already exists" });
+  }
   const newUser = new User({
     companyName: req.body.companyName,
     email: req.body.email,
@@ -37,8 +44,8 @@ router.post("/register", async (req, res) => {
 
 router.post("/login", async (req, res) => {
   try {
-    const user = await User.findOne({ username: req.body.username });
-
+    const user = await User.findOne({ email: req.body.email });
+    console.log(user);
     const hashedPassword = CryptoJS.AES.decrypt(
       user.password,
       process.env.PASS_SEC
